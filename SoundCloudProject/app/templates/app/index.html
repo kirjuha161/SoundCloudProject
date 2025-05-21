@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="{% static 'app/styles.css' %}">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">NEW_SOUNDCLOUD</a>
+        <nav>
+            <a href="#">Главная</a>
+            <a href="{% url 'search_tracks' %}">Треки</a>
+            <a href="#">Плейлисты</a>
+            <a href="{% url 'soundcloud_login' %}">Войти через SoundCloud</a>
+        </nav>
+        <div style="clear: both;"></div>
+    </header>
+    <section class="hero">
+        <h1>Добро пожаловать на NEW_SOUNDCLOUD!</h1>
+        <p>Открывайте, слушайте и делитесь музыкой со всего мира.<br>Создавайте свои плейлисты и находите новых
+            исполнителей.
+        </p>
+        <button class="cta-btn">Начать слушать</button>
+    </section>
+    <section class="features">
+        <div class="feature">
+            <h3>Огромная библиотека</h3>
+            <p>Тысячи треков от независимых и популярных исполнителей.</p>
+        </div>
+        <div class="feature">
+            <h3>Создавай плейлисты</h3>
+            <p>Собирайте любимые треки в персональные коллекции.</p>
+        </div>
+        <div class="feature">
+            <h3>Делись с друзьями</h3>
+            <p>Отправляйте свои находки и плейлисты друзьям.</p>
+        </div>
+    </section>
+    <footer>
+        &copy; 2025 NEW_SOUNDCLOUD. Все права нахую намотаны.
+    </footer>
+</body>
+
+</html>
